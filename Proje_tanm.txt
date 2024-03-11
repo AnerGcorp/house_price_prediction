@@ -1,0 +1,66 @@
+## Proje Tanımı: Ev Fiyat Tahmini Uygulaması
+
+Proje Amacı:
+
+Veri Bilimi Bootcamp'i boyunca öğrenilen veri analizi ve modelleme becerilerini kullanarak, müşterilerin ev fiyatlarını tahmin edebileceği bir web uygulaması geliştirmek.
+Mülakatlarda sorulan end-to-end bir proje yaptınız mı sorusuna güven içinde cevap verebilmek.
+
+
+Proje Kapsamı:
+
+1. Veri Hazırlama:
+    * Bootcamp boyunca kullanılan ev fiyat tahmini veri seti kullanılacak.
+    * Temizlenmiş veri seti kullanılarak modelleme yapılacak.
+
+2. Model Seçimi ve Eğitimi:
+    * Bootcamp boyunca geliştirilen ev fiyat tahmini modelleri değerlendirilecek.
+    * En iyi performansı veren model seçilerek, veri seti üzerinde eğitilmesi sağlanacak.
+
+3. Web Uygulaması Geliştirme:
+    * Streamlit ve Flask kullanarak, kullanıcı dostu bir web arayüzü tasarlanacak.
+    * Kullanıcılar, arayüz üzerinden ev özellikleri (oda sayısı, metrekare, lokasyon vb.) girebilecekler.
+    * Girilen bilgiler modele gönderilecek ve tahmini ev fiyatı gösterilecek.
+
+4. Uygulamanın Test Edilmesi:
+    * Farklı senaryolar ile uygulama test edilecek.
+    * Hata ve aksaklıklar giderilecek.
+    * Uygulama Streamlit Cloud ve AWS üzerinden deploy edilecek.
+    * Vakit bulan öğrenciler Flask ile de bir sunum yapabilirler, yeterli vakit bulabilirler.
+
+
+Proje Teslimleri:
+
+1. Kod Deposu:
+    * Geliştirilen web uygulamasının kodları, GitHub platformunda paylaşılacak.
+
+2. Rapor:
+    * Proje kapsamında yapılan çalışmalar ve elde edilen sonuçlar toplantılarda özetlenecek.
+    * AWS ve Streamlit Cloud üzerinden çalışan proje, gösterime sunulacak ve beraberce değerlendirilecek.
+
+3. Zamanlama:
+    * Öncelikle lokalde başarılı bir deployment için uğraşılmalıdır.
+    * Daha sonra Github-Streamlit Cloud sunumu yapılabilir.
+    * Üçüncü aşamada, proje AWS-EC2 platformunda yayımlanmalıdır.
+    * Dördüncü ve son aşamada Github-Flask ile Heroku platformunda yayım yapılabilir.
+
+
+Proje Değerlendirme Kriterleri:
+
+* Uygulamanın işlevselliği ve kullanıcı dostu olması
+* Kodların temizliği ve okunabilirliği
+* Raporun (notebook) açıklayıcı ve bilgilendirici olması
+
+Ek Öneriler:
+
+* Farklı modelleme teknikleri kullanılarak, tahminlerin doğruluğu artırılabilir (stacking/ensemble).
+* Algoritmaların ortak seçtiği özellikler kullanılarak kullanıcı girişi kolaylaştırılabilinir (feature importances 13/80). 
+* Uygulamanın görsel açıdan da çekici olması için Bootstrap gibi CSS framework'leri kullanılabilir (Flask).
+* Herhangi bir hata oluşması durumunda, kullanıcılara bilgilendirici mesajlar gösterilebilir.
+
+
+Bu proje ile:
+
+* Öğrenciler, veri bilimi becerilerini pratik bir problem üzerinde uygulama imkanı bulacaklar.
+* Geliştirilen web uygulaması, potansiyel ev alıcıları için faydalı bir araç haline gelebilecek.
+
+Başarılar!
