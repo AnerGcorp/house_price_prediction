@@ -21,8 +21,8 @@ st.image(image, caption='House', use_column_width=True)
 
 # Inputs
 st.header('Enter House Details')
-overall_qual = st.number_input('Overall Quality (1-10)', min_value=1)
-garage_cars = st.number_input('Garage Cars', min_value=0)
+overall_qual = st.number_input('Overall Quality (1-10)', min_value=1, max_value=10)
+garage_cars = st.number_input('Garage Cars', min_value=0, max_value=4)
 central_air = st.radio('Central Air Conditioning', ['Yes', 'No'])
 living_area = st.slider('Living Area (sqft)', min_value=334, max_value=5642)
 garage_type = st.selectbox('Garage Type', ['More than one type of garage', 'Attached to home', 'Basement Garage', 'Built-In', 'Car Port', 'Detached from home', 'No Garage'])
@@ -43,7 +43,7 @@ with col2:
 with col3:
     fireplace_qual = st.selectbox('Fireplace Quality', ['Excellent', 'Good', 'Average', 'Fair', 'Poor', 'No Fireplace'])
 
-land_contour = st.number_input('Land Contour', min_value=1, max_value=4)
+land_contour = st.selectbox('Land Contour (Flatness of the property)', ['Near Flat/Level', 'Banked - Quick and significant rise from street grade to building', 'Hillside - Significant slope from side to side', 'Depression'])
 
 # User input dictionary
 sample_one = pd.DataFrame({
@@ -73,6 +73,11 @@ sample_one['GarageQual'] = sample_one['GarageQual'].map(garage_qu_mapping)
 garage_type_mapping = {'More than one type of garage': 0, 'Attached to home': 1, 'Basement Garage': 2, 
                        'Built-In': 3, 'Car Port': 4, 'Detached from home': 5, 'No Garage': 6}
 sample_one['GarageType'] = sample_one['GarageType'].map(garage_type_mapping)
+
+land_contour_mapping = {'Banked - Quick and significant rise from street grade to building': 0, 
+                        'Hillside - Significant slope from side to side': 1, 'Depression': 2, 
+                        'Near Flat/Level': 3}
+sample_one['LandContour'] = sample_one['LandContour'].map(land_contour_mapping )
 
 # Preprocess user input
 #preprocessed_input_flat = preprocess_input(sample_one)
